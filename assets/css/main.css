@@ -1,0 +1,667 @@
+/* chung */
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0; 
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(223, 213, 203);
+}
+
+.grid__small{
+    margin: 8px 10px;
+}
+
+.grid__medium{
+    margin: 16px !important;
+}
+
+.mt8{
+    margin-top: 8px !important;
+}
+
+.mt16{
+    margin-top: 16px !important;
+}
+
+.mb16{
+    margin-bottom: 16px !important;  
+}
+
+.underlined{
+    text-decoration: none !important;
+}
+
+/* rieng*/
+.news{
+    
+}
+/* Phan header */
+.header{
+    min-height: 120px;
+}
+
+.header .intro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__logo-img{
+    width: 100px;
+    height: 100px;
+}
+
+.intro__logo{
+    padding-left: 20px;
+    position: relative;
+}
+
+.intro__logo-child{
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    width: 200px;
+}
+
+.logo__title{
+    margin-bottom: 6px;
+}
+
+.logo__slogan{
+    color: rgb(179, 154, 154);
+}
+
+.intro__contact{
+    text-align: right;
+}
+
+.contact__phone{
+    margin-top: 8px;
+}
+
+.contact__number{
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+.contact__number-link{
+    color: green;
+}
+
+.nav-min__list{
+    list-style-type: none;
+    margin: 16px 0;
+    margin-right: -10px;
+}
+
+.list__item{
+    display: inline-block;
+}
+
+.list__item .list__item-link{
+    padding: 5px 10px;
+    border: 1px solid  rgb(223, 213, 203);
+    text-decoration: none;
+    color:green;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.list__item:hover .list__item-link{
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.navbar{
+    background: linear-gradient(to bottom,rgb(56, 224, 56),rgb(16, 94, 16));
+    height: 46px;
+    border-radius: 6px; 
+}
+
+.navbar__list .navbar__item{
+    display: inline-block;
+}
+
+.navbar__list .navbar__item .navbar__item-link{
+    text-decoration: none;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 48px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+} 
+
+.navbar__list .navbar__item:hover .navbar__item-link{
+    color: green;
+    background-color: #fff;
+}
+
+/* Phan container */
+
+.container{
+    margin-top: 32px;
+}
+
+.container .mid{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.mid__info{
+    border: 1px solid #ccc;
+    flex-basis: 80%;
+}
+
+
+.info__intro {  
+    display: flex;
+    border-radius: 10px;
+}
+
+.intro__image .intro__img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.info__intro .intro__image{
+    flex-basis: 75%;
+    height: 300px;
+}
+
+.info__intro .intro__define{
+    flex-basis: 25%;
+    background-color: rgb(41, 13, 13);
+    line-height: 1.2;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.intro__define .title,
+.intro__define .define,
+.intro__define .next__page,
+.number_page{
+    margin: 10px 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.intro__define .next__page{
+    color: rgb(83, 83, 206);
+}
+
+.intro__define .title{
+    color: greenyellow;
+    font-size: 28px;
+}
+
+.number_page{
+    list-style-type: none;
+}
+
+.number_page .number{
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(150, 127, 127);
+    margin-right: 8px;
+    padding: 4px 8px;
+    border-radius: 12px;
+} 
+
+.number_page .number:hover{
+    cursor: pointer;
+    background-color: rgb(18, 194, 42);
+}
+
+.info__body{
+    display: flex;
+}
+
+.info__body .info__body-header{
+    flex-basis: 60%;
+}
+
+.info__body .body-header__title{
+    font-weight: 850;
+    font-size: 25px;
+    color: rgb(57, 65, 58);
+}
+
+.body-header__title .body-header__title-link{
+    text-decoration: none;
+    color: rgb(32, 190, 32);
+}
+
+.body-header__define .body-header__define-link{
+    color: rgb(32, 190, 32);
+}
+
+
+.info__body .body-header__define{
+    font-size: 16px;
+    color: rgb(57, 65, 58);
+}
+
+.info__body .info__body-image{
+    margin-left: 60px;
+    margin-top: -73px;
+}
+
+.info__body-image .info__body-img{
+    width: 300px;
+}
+
+.info__nav{
+    background-color: rgb(250, 248, 248);
+    height: 46px;
+}
+
+.info__nav .info__nav-list{
+    list-style-type: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    height: 46px;
+    justify-content: space-between;
+}
+
+.info__nav .info__nav-item{
+    display: block;
+    line-height: 46px;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    width: 33.33333%;
+}
+
+.info__nav-list .nav-item__link{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    display: block;
+}
+
+.info__nav .border__none{
+    border-left: none;
+}
+
+.info__nav-list .border__conner-1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}   
+
+.info__nav-list .border__conner-2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.info__nav-item:hover .nav-item__link{
+    background: linear-gradient(to bottom,rgb(26, 179, 26),rgb(24, 77, 12));
+    color: #fff;
+}
+
+.info__location{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    line-height: 1.6;
+}
+
+.info__location .location__holiday{
+    display: block;
+    width: 33.33333%;
+    padding-left: 20px;
+}
+
+.location__holiday .location__holiday-image{
+    width: 100%;
+    height: 140px;
+    border: 4px solid #ccc;
+    border-radius: 10px;
+}
+
+.mid__search{
+    border: 1px solid #ccc;
+    flex-basis: 20%;
+    line-height: 1.6;
+    background-color: rgb(231, 235, 227);
+}
+
+.mid__search .order__ticket{
+    border-bottom: 1px solid #ccc;
+}
+
+.order__ticket .ticket__title,
+.order__ticket .ticket__question{
+    color: rgb(85, 81, 81);
+    font-size: 16px;
+}
+
+.order__ticket .ticket__question{
+    font-size: 12px;
+}
+
+.order__ticket .ticket__btn{
+    display: block;
+    margin-top: 16px;
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    color: rgb(158, 156, 156);
+    padding: 4px 0;
+    padding-left: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order__ticket .ticket__btn:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.order__ticket .ticket__search{
+    margin-top: 16px;   
+    background: rgb(32, 153, 32);
+    position: relative;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
+    width: 90%;
+}
+
+.order__ticket .ticket__search::before{
+    content: "";
+    position:absolute;
+    border: 17.5px solid #000;
+    border-color: transparent transparent transparent rgb(32, 153, 32);
+    right: -35px;
+}
+
+.order__ticket .ticket__search-link{
+    text-decoration: none;
+    display: block;
+    padding: 0 12px;
+    font-size: 12px;
+    padding: 8px 12px;
+    color: #fff;
+}
+.order__ticket .fa-long-arrow-alt-right{
+    position: absolute;
+    font-size: 28px;
+    color: rgb(9, 124, 9);
+    font-weight: 1000;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+.fa-long-arrow-alt-right:hover{
+    cursor: pointer;
+}
+
+.order__ticket .ticket__search-quicky{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.ticket__search-quicky .ticket__search-input{
+    margin-right: 8px;
+}
+
+.ticket__search-quicky .ticket__search-location{
+    padding: 4px 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ticket__search-quicky .ticket__search-click{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgb(45, 218, 45),rgb(17, 99, 17));
+}
+
+.ticket__search-quicky  .search-click__link{
+    display: block;
+    padding: 4px 4px;
+    color: #fff;
+}
+
+.signup__ticket .signup__title,
+.signup__ticket .signup__decsription{
+    color: rgb(85, 81, 81);
+    font-size: 16px;
+}
+
+.signup__ticket .signup__decsription{
+    font-size: 12px;
+}
+
+.signup__ticket .signup__email{
+    width: 100%;
+    padding: 4px 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.signup__ticket .sign__up{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.sign__up .signup__name{
+    padding: 4px 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign__up .signup__link{
+    display: block;
+    padding: 4px 4px;
+    color: #fff;
+}
+
+.sign__up .signup__link{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgb(45, 218, 45),rgb(17, 99, 17));
+}
+
+.mid__search .signup__ticket{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.latest__news .latest__head{
+    color: rgb(85, 81, 81);
+    font-size: 20px;
+}
+
+.latest__news{
+    line-height: 1.6;
+}
+
+.latest__news .latest__new-item{
+    color: rgb(85, 81, 81);
+    margin-top: 16px;
+}
+
+.latest__new-item .latest__new-title:hover{
+    color: rgb(20, 179, 20);
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 16px;
+    line-height: 1.6;
+}
+
+.footer .footer__head{
+    border: 1px solid #ccc;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(175, 134, 115), rgb(119, 98, 75));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.footer .footer__head-descrip{
+    padding: 8px 0;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.footer .footer__contact{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(231, 235, 227);
+    padding: 16px 8px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.footer__contact .footer__item{
+    padding: 0 18px;
+}
+
+.footer__contact .footer__internet{
+    flex-basis: 20%;
+}
+
+.footer__contact .internet__title{
+    color: rgb(65, 82, 26);   
+}
+
+.footer__contact .internet__description{
+    padding-top: 8px;
+    color: rgb(85, 81, 81);
+}
+
+.footer__internet .internet__join{
+    margin-top: 8px;
+    border: 3px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgb(175, 134, 115), rgb(119, 98, 75));
+    border-radius: 8px;
+}
+
+
+.internet__join .internet__join-link{
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    flex-basis: 80%;
+    padding: 4px 8px;
+}
+
+.internet__join .fa-user-friends{
+    flex-basis: 20%;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 20px;
+    border-left: 2px solid rgb(161, 132, 132);
+    cursor: pointer;
+}
+
+.footer__contact .footer__link{
+    flex-basis: 60%;
+    border-left: 2px solid rgb(214, 206, 206);
+    border-right: 2px solid rgb(214, 206, 206);
+    max-height: 112px;
+}
+
+.footer__link .footer__link-title{
+    color: rgb(65, 82, 26);
+}
+
+.footer__link .footer__link-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link-list .footer__list{
+    list-style-type: none;
+    padding-top: 8px;
+    padding-right: 84px;
+}
+   
+.footer__link .footer__item-link{
+    text-decoration: none;
+    display: block;
+    color: rgb(85, 81, 81);
+    line-height: 1.8;
+    font-size: 10px;
+}
+
+.footer__list-item:hover .footer__item-link{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.footer__contact .footer__phone{
+    flex-basis: 20%;
+}   
+
+.footer__phone .footer__phone-title{
+    color: rgb(65, 82, 26);
+}
+
+.footer__phone .footer__phone-list{
+    list-style-type: none;
+    padding-top: 8px;
+    color: rgb(85, 81, 81);
+}
+
+.footer__phone-list .footer__phone-item{
+}
+
+.footer__phone-list span{
+    font-weight: 700;
+}
+
+.end{
+    text-align: center;
+    margin-top: 8px;
+    color: rgb(85, 81, 81);
+}
+
+.end__descrip{
+    text-align: center;
+    color: rgb(85, 81, 81);
+    margin-bottom: 8px;
+}
+
+.end__descrip-link{
+    color: rgb(85, 81, 81);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
